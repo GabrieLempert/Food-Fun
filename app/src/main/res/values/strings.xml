@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Food Fun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="alarms_destination_label" />
+    <string name="schedule_destination_label" />
+    <string name="timer_destination_label" />
+    <string name="stopwatch_destination_label" />
+    <string name="cancel" >CANCEL</string>
+    <string name="accept" >ACCEPT</string>
+    <string name="user_name">userName</string>
+    <string name="default_user_client_id">847043549300-eh3o9ami10f19mlt2ct927i04ir0ttdb.apps.googleusercontent.com</string>
+
+
+</resources>

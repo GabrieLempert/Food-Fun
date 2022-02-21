@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/travel_advertising_poster_car_luggage_sketch_classic_design_6854084"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="212dp"
+        android:layout_height="591dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_marginTop="40dp"
+            tools:srcCompat="@drawable/car_04" />
+
+        <TextView
+            android:id="@+id/User_Name_1"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_margin="20dp"
+            android:text="Hello @string/user_name"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/profile_user_svgrepo_com" />
+
+        <Button
+            android:id="@+id/New_Trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/road"
+            android:text="New trip" />
+
+        <Button
+            android:id="@+id/My_Trips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/road"
+            android:text="My trips" />
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/road"
+            android:text="Log out" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

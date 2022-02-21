@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "847043549300",
+    "project_id": "food-fun-13207",
+    "storage_bucket": "food-fun-13207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847043549300:android:87f31a76768e17eebbd921",
+        "android_client_info": {
+          "package_name": "com.example.foodfun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847043549300-eh3o9ami10f19mlt2ct927i04ir0ttdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzVfACxn9OMtJLPNAXA-K-yB3VLUBXwWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847043549300-eh3o9ami10f19mlt2ct927i04ir0ttdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

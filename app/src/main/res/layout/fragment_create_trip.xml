@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_trip"
+    android:orientation="vertical"
+    android:background="@color/transparent_road">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:orientation="horizontal"
+            android:gravity="">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/secularone_regular"
+                android:text="Welcome to your new Trip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:fontFamily="@font/secularone_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Enter name of the trip" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/trip_name_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTextPersonName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Name of the trip"
+                    android:layout_margin="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button"
+                android:id="@+id/Submit_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Name"
+                android:backgroundTint="@color/road"
+                android:layout_margin="20dp"
+                />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/secularone_regular"
+                android:text="Enter Number of days in trip"
+                android:layout_margin="10dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of days"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Number_Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:layout_margin="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Submit_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/road"
+                android:text="Submit Number" />
+
+            <TextView
+                android:fontFamily="@font/secularone_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:text="Enter number of people in trip"
+                android:layout_margin="20dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Number of people"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNumberSigned"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:layout_margin="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Number_People"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Submit Number"
+                android:backgroundTint="@color/road"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

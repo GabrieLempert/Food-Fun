@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomizeTrip"
+    android:background="@color/transparent_road"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="customize trip"
+            android:textSize="40sp">
+
+        </TextView>
+
+
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="4dp"
+                android:scrollbarSize="15dp"
+                android:backgroundTint="@color/black"
+                android:dividerHeight="4dp">
+            </ListView>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="vertical">
+
+
+            <Button
+                app:strokeColor="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/add_meal_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Meal"
+                android:layout_margin="4dp"
+                app:icon="@drawable/baseline_dinner_dining_24" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/create_new_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:strokeColor="@color/black"
+                android:id="@+id/meal_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:boxStrokeColor="@color/black"
+                android:hint="Name of Meal"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/meal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            app:strokeColor="@color/black"
+                            android:id="@+id/Breakfast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Breakfast" />
+
+                        <RadioButton
+                            app:strokeColor="@color/black"
+                            android:id="@+id/Lunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lunch" />
+
+                        <RadioButton
+                            app:strokeColor="@color/black"
+                            android:id="@+id/Dinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Dinner" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:fontFamily="@font/secularone_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Ingredient"
+                android:gravity="center"
+                android:textSize="30sp"></TextView>
+
+
+            <LinearLayout
+                app:boxStrokeColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/meal_people_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="People"
+                    app:helperText="How many\npeople will\neat"
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        app:boxStrokeColor="@color/black"
+                        android:id="@+id/meal_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:boxStrokeColor="@color/black"
+                    android:id="@+id/ingredient_name_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Name"
+                    app:startIconDrawable="@drawable/baseline_add_20"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ingredient_name"
+                        android:layout_width="152dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/number_ingredients_layer"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Amount of Ingredient"
+                    app:helperText="Amount for one person">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/number_ingredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/general_ingredient_layer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Name of General Ingredient"
+                app:startIconDrawable="@drawable/baseline_add_20"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/general_ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/supplies_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Name of Supplies"
+                app:startIconDrawable="@drawable/baseline_add_20"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/supplies_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:textColor="@color/black"
+                app:strokeColor="@color/black"
+                android:id="@+id/finish_new_meal"
+                app:icon="@drawable/outline_restaurant_24"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:text="Finished adding meals?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/black"
+                android:backgroundTint="#FFFFFF"
+                android:divider="@color/black"
+                android:elevation="20dp"></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            android:id="@+id/finish_customize_trip"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Take me to my list"
+            app:icon="@drawable/outline_room_service_black_36">
+
+        </Button>
+    </LinearLayout>
+        </LinearLayout>
+
+
+</ScrollView>
